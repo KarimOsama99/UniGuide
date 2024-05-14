@@ -741,31 +741,11 @@ body {
 
 
 /* Details */
-.carousel-item {
-    position: relative;
-}
-.carousel-item img::before {
-    content: "";
-    position: absolute;
-    pointer-events: none;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: linear-gradient(88deg, #f7f5f2, transparent);
-}
-
-.info8 span,
-.carousel-control-next span,
-.carousel-control-prev span {
-    color: var(--primary);
-    z-index: 99999 !important;
-} 
-
 .uni8 {
     box-shadow: 0 6px 20px rgba(0,0,0,.10196);
     padding: 15px;
     border-radius: 10px;
+    border: 1px solid var(--light);
 }
 .uni8 .uimg {
     width: 100%;
@@ -794,6 +774,7 @@ body {
     box-shadow: 0 6px 20px rgba(0,0,0,.10196);
     padding: 15px;
     border-radius: 10px;
+    border: 1px solid var(--light);
 }
 .uni4 img {
     width: 100%;
