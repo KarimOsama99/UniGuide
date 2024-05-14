@@ -123,5 +123,15 @@
       event.preventDefault();
     });
   });
+
+  // // toggler
+  // $(".navbar-toggler").click(function () { 
+  //   $(".navbar-toggler i").toggleClass("fa-bars", "fa-times");
+  // });
+
+  // University Details
+  $('.info-list li').on("click", function () { 
+    $(this).addClass('active').siblings('li').removeClass('active');
+  });
   
 })(jQuery);

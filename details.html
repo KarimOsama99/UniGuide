@@ -62,7 +62,7 @@
         data-bs-toggle="collapse"
         data-bs-target="#navbarCollapse"
       >
-        <span class="navbar-toggler-icon"></span>
+        <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto p-4 p-lg-0">
@@ -129,92 +129,107 @@
     <section class="uni">
       <div class="container">
         <div class="row">
+
           <div class="col-lg-8">
-            <div id="carouselExampleCaptions" class="carousel slide">
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleCaptions"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleCaptions"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleCaptions"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="img/الجامعات.png" class="d-block w-100" alt="..." />
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>
-                      Some representative placeholder content for the first
-                      slide.
-                    </p>
-                  </div>
+            <div class="uni8">
+                <img src="img/الجامعات.png" alt="uni8" class="uimg">
+                <div class="content pb-4">
+                    <div class="info pt-4">
+                        <!-- <img src="img/التعليم.webp" alt="unimg" class="unimg"> -->
+                        <h2>Ain-Shams University</h2>
+                    </div>
+                    <div class="det d-flex gap-5">
+                        <p><span><i class="fas fa-university"></i>University Type</span><br />Private</p>
+                        <p><span><i class="fas fa-map-marker-alt"></i>Location</span><br />Cairo</p>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                  <img
-                    src="img/تواصل معنا.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>
-                      Some representative placeholder content for the second
-                      slide.
-                    </p>
-                  </div>
+
+                <ul class="info-list">
+                    <li data-class="aboutUni" class="active">About University</li>
+                    <li data-class="programs">Programs</li>
+                    <li data-class="dormitories">Dormitories</li>
+                    <li data-class="campus">Campus</li>
+                    <li data-class="confessions">Confessions</li>
+                </ul>
+                
+                <div class="info-content accordion" id="accordionExample">
+                        <div class="accordion-item aboutUni">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="fas fa-globe"></i>Content
+                                </button>
+                                </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item programs">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                    <i class="fas fa-globe"></i>Programs
+                                </button>
+                                </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item dormitories">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                    <i class="fas fa-globe"></i>Dormitories
+                                </button>
+                                </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item campus">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                    <i class="fas fa-globe"></i>Campus
+                                </button>
+                                </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <h4 class="title">Campuses of Ain-Shams University and the available specializations:</h4>
+                                <ol>
+                                    <li><h5 class="title">The Main Campus</h5> This campus is located in Topkapi and covers a total area of 57200 square meters. It has 47 classrooms, 99 laboratories, 3 conference rooms, 5 architecture workshops, computer workshops, a cinema, television and radio studio, cafeterias, restaurants, libraries, study spaces, and many other facilities to meet the students' needs during their studies. </li>
+                                    <li><h5 class="title">Vadi Campus</h5>It is an impressive architectural building located south of the main campus.</li>
+                                    <li><h5 class="title">Third Campus</h5>It is under construction, and the university administration plans to make it an architectural masterpiece.  </li>
+                                </ol>
+                                <p class="lead text-center title">If you still have any other queries, we are here to help, and you can always contact us: <br/> +201000000000 <br/> Or WhatsApp through <a href="#">Link</a></p>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item confessions">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                    <i class="fas fa-globe"></i>Confessions
+                                </button>
+                                </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <h4 class="title">Accreditation of Ain-Shams University:</h4>
+                                <ul>
+                                    <li>The University of Istinye is recognized by many countries in the Middle East, including Egypt, Lebanon, Syria, Yemen, Palestine, and all the countries of the European Union and its institutions.</li>
+                                    <li>One of the most famous institutions in the medical field is the "World Directory of Medical Schools." The mission of the World Directory of Medical Schools is to list all medical schools in the world with accurate, up-to-date, and comprehensive information about each school.  </li>
+                                </ul>
+                                <p class="lead text-center title">If you still have any other queries, we are here to help, and you can always contact us: <br/> +201000000000 <br/> Or WhatsApp through <a href="#">Link</a></p>
+                            </div>
+                            </div>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                  <img src="img/1.من نحن.png" class="d-block w-100" alt="..." />
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>
-                      Some representative placeholder content for the third
-                      slide.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+
             </div>
+
           </div>
+
           <div class="col-lg-4">
             <div class="box1 uni4">
                 <img src="img/1.من نحن.png" alt="uni4">
@@ -334,6 +349,7 @@
                 </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -500,6 +516,8 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Template Javascript -->
+    <script src="js/filter.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/details.js"></script>
   </body>
 </html>

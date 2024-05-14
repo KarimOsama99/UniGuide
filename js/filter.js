@@ -42,3 +42,19 @@ function Filtering() {
   });
 }
 Filtering();
+
+
+const toggle = document.querySelector('.navbar-toggler');
+const bars = document.querySelector('.navbar-toggler i')
+
+toggle.addEventListener('click', () => {
+  bars.classList.toggle('fa-times');
+})
+
+// const infoItem = document.querySelector('.info-list li');
+// const infoItems = document.querySelectorAll(".info-list li");
+
+// infoItem.addEventListener('click', () => {
+//   infoItem.classList.add('active');
+//   // infoItems.classList.remove('active');
+// })
