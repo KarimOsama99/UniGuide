@@ -439,6 +439,82 @@ body {
     color: var(--light) !important;
 }
 
+/* FAQ */
+.faq {
+    background-color: #181d38 ;
+    width: 100% !important;
+    margin-top: 50px;
+}
+
+.faq .get-in-touch {
+    color: white;
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+    /* border-radius: 25px; */
+}
+.faq h3 {
+    color: #fff;
+}
+.faq h2 {
+    color: var(--green);
+    margin-bottom: 15px;
+}
+.faq .get-in-touch .col-md-6::before {
+    background-color: #181d38 ;
+    width: 150vw;
+    left: -50vw;
+    top: -15px;
+    height: calc(100% + 20px);
+    position: absolute;
+    content: "";
+    z-index: -1;
+}
+.faq ul li {
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+@media (max-width: 767px) {
+    .faq ul {
+        margin-bottom: 25px;
+    }
+}
+.faq ul li i {
+    color: #fff;
+    background-color: #4fce5d;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 10px !important;
+}
+.faq .form {
+    background-color: #fff;
+    padding: 25px;
+    /* border-radius: 10px; */
+    color: var(--dark);
+}
+.faq .form h3 {
+    color: var(--dark);
+}
+.faq .form .register {
+    border-radius: 8px;
+    background-color: var(--primary);
+    transition: background-color .2s ease-in-out;
+}
+.faq .form .register:hover {
+    background-color: #5f25eb;
+}
+
+.detform {
+    text-align: center;
+}
+.detform h4 {
+    margin-bottom: 0;
+}
+.detform p {
+    margin-bottom: 2rem;
+}
+/* FAQ */
 
 /*** Categories & Courses ***/
 .hcard {
@@ -765,6 +841,14 @@ body {
     color: #fff;
 }
 
+.seeAll {
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.seeAll i {
+    margin-left: 5px;
+}
 
 /* Details */
 .uni8 {
@@ -807,11 +891,25 @@ body {
     border: 1px solid var(--light);
 }
 .uni4 .imgbox {
+    position: relative;
+    background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url(../img/1.من\ نحن.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 200px;
     border-radius: 5px;
     cursor: pointer;
     overflow: hidden;
+}
+.uni4 .imgbox i {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: #fff;
+    font-size: 48px;
+    transition: color .2s ease-in-out;
 }
 .uni4 img {
     width: 100%;
@@ -821,6 +919,9 @@ body {
 .uni4 img:hover {
     transform: scale(1.125);
 }
+.uni4 .imgbox:hover .play {
+    color: var(--green) !important;
+}
 .uni4 .content p {
     margin-bottom: 0 !important;
 }
@@ -828,11 +929,13 @@ body {
     color: var(--dark);
     font-size: 18px;
 }
-.uni4 .content .price .discount {
-    text-decoration: line-through;
-    color: gray;
-    margin-left: 10px;
+.uni4 .content .price select {
+    cursor: pointer;
 }
+/* .uni4 .content .price select option:hover {
+    background-color: var(--primary) !important;
+    cursor: pointer;
+} */
 .uni4 .content .offer {
     background-color: var(--green);
     padding: 10px 20px;

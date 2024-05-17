@@ -714,11 +714,22 @@
           <div class="col-lg-4">
             <div class="box1 uni4">
                 <div class="imgbox">
-                    <img src="img/1.من نحن.png" alt="uniimg">
+                    <a href="#" target="_blank">
+                        <img src="img/1.من نحن.png" alt="uniimg">
+                        <i class="fas fa-play-circle play"></i>
+                    </a>
                 </div>
                 <div class="content">
-                    <div class="price d-flex justify-content-between align-items-center pt-3">
-                        <p>4,104 / year <span class="discount">4,320 $</span></p>
+                    <div class="price d-flex justify-content-between align-items-center pt-3 pb-3">
+                        <div class="years">
+                        <select class="form-select" name="years" id="years">
+                            <option value="4 years" disabled selected>4 Years Prices --</option>
+                            <option value="year 1">1st Year ( 1500 $)</option>
+                            <option value="year 2">2nd Year ( 1600 $)</option>
+                            <option value="year 3">3rd Year ( 1750 $)</option>
+                            <option value="year 4">4th Year ( 2000 $)</option>
+                        </select>
+                    </div>
                         <span class="offer"><i class="fas fa-tags"></i>5% Off</span>
                     </div>
                     <div class="stats d-flex flex-column gap-3 pt-2">
@@ -726,15 +737,6 @@
                         <p><i class="fas fa-globe"></i>Local Rank: <span>141</span></p>
                         <p>Study Programs: <span>171</span></p>
                         <p>Students: <span>12,238</span></p>
-                    </div>
-                    <div class="years mt-3">
-                        <select class="form-select" name="years" id="years">
-                            <option value="4 years" disabled selected>4 Years</option>
-                            <option value="year 1">1st Year ( 1500 )$</option>
-                            <option value="year 2">2nd Year ( 1600 )$</option>
-                            <option value="year 3">3rd Year ( 1750 )$</option>
-                            <option value="year 4">4th Year ( 2000 )$</option>
-                        </select>
                     </div>
                     <div class="reg d-flex justify-content-center pt-3 pb-2">
                         <a href="#" class="btn w-100">Register Now</a>
@@ -847,6 +849,55 @@
     </section>
     <!-- End UNI Details-->
 
+        <!-- FAQ Start -->
+    <section class="faq pt-5 pb-5">
+        <div class="container">
+            <div class="get-in-touch row">
+                <div class="col-md-12 form detform">
+                    <h4>Want to learn more about university?</h4>
+                    <p class="lead text-black-50">Enter Yor Details and We Will Contact You</p>
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="fname" placeholder="First Name">
+                                    <label for="name">First Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="lname" placeholder="Last Name">
+                                    <label for="name">Last Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="phone" placeholder="phone">
+                                    <label for="phone">Phone Number</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                    <label for="message">Your Inquery</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary register w-100 py-3" type="submit">Send Inquery</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ End -->
 
     <!-- Footer Start -->
     <svg
