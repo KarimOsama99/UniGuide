@@ -445,6 +445,14 @@ body {
     width: 100% !important;
     margin-top: 50px;
 }
+.faq2 .form {
+    box-shadow: 0 6px 20px rgba(0,0,0,.10196);
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid var(--light);
+    margin-top: 50px;
+    padding: 50px;
+}
 
 .faq .get-in-touch {
     color: white;
@@ -453,12 +461,12 @@ body {
     overflow: hidden;
     /* border-radius: 25px; */
 }
-.faq h3 {
+.faq h2 {
     color: #fff;
 }
-.faq h2 {
+.faq h3 {
     color: var(--green);
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 .faq .get-in-touch .col-md-6::before {
     background-color: #181d38 ;
@@ -477,6 +485,9 @@ body {
 @media (max-width: 767px) {
     .faq ul {
         margin-bottom: 25px;
+    }
+    .faq ul li {
+        font-size: 16px;
     }
 }
 .faq ul li i {
@@ -513,6 +524,17 @@ body {
 }
 .detform p {
     margin-bottom: 2rem;
+}
+.detreg {
+    border-radius: 5px;
+}
+@media (max-width: 767px) {
+    .detform h4 {
+        margin-bottom: 8px;
+    }
+    .detform p {
+        font-size: 16px;
+    }
 }
 /* FAQ */
 
