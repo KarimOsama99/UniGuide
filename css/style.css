@@ -521,6 +521,8 @@ body {
 }
 .detform h4 {
     margin-bottom: 0;
+    color: var(--primary);
+    font-weight: 800;
 }
 .detform p {
     margin-bottom: 2rem;
@@ -1274,6 +1276,7 @@ table th {
     float: left;
     font-weight: bold;
     text-transform: uppercase;
+    color: var(--primary);
   }
   
   table td:last-child {
