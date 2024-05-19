@@ -15,6 +15,7 @@
 
 body {
     font-family: 'BuloRounded', sans-serif !important;
+    background-color: #fafafa !important;
 }
 
 .preloader {
@@ -128,11 +129,11 @@ body {
 
 /* Intro */
 .intro {
-    background-color: var(--green);
+    background-color: var(--dark);
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border-bottom: 3px solid var(--primary);
+    border-bottom: 3px solid var(--green);
 }
 .flags {
     padding: 15px;
@@ -144,12 +145,21 @@ body {
     margin-right: 5px;
     margin-bottom: 3px;
 }
+.flags a {
+    color: #fff;
+}
+.langs a {
+    transition: all .2s ease-in-out;
+}
+.langs a:hover {
+    padding-left: 5px;
+}
 .langs {
     font-size: 18px;
     margin-bottom: 10px;
     padding-left: 10px;
-    color: var(--primary);
-    background-color: var(--green);
+    color: #fff;
+    background-color: var(--dark);
 }
 .langs a:first-of-type {
     font-weight: bold;
@@ -157,25 +167,37 @@ body {
 }
 
 .intro .btn.btn-social {
-    margin-right: 5px;
+    margin-right: 10px;
     width: 35px;
     height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
-    font-weight: normal;
-    background-color: #ff5656;
-    border: 1px solid #ff5656;
+    border: 1px solid var(--green);
     border-radius: 50%;
     transition: .3s;
 }
 
 .intro .btn.btn-social:hover {
-    background-color: #ff1f1f;
+    background-color: var(--green);
+    color: var(--dark);
 }
 
 /* Intro */
+
+.aboutList li {
+    font-size: 18px;
+    list-style: none;
+}
+.aboutList li i {
+    color: #fff;
+    background-color: #4fce5d;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 10px !important;
+}
 
 
 /*** Navbar ***/
@@ -183,6 +205,9 @@ body {
     width: 150px;
     height: 30px;
     padding-left: 25px;
+}
+.footerlogo {
+    width: 150px;
 }
 
 .navbar .dropdown-toggle::after {
@@ -505,8 +530,9 @@ body {
     /* border-radius: 10px; */
     color: var(--dark);
 }
+
 .faq .form h3 {
-    color: var(--dark);
+    color: var(--primary);
 }
 .faq .form .register {
     border-radius: 8px;
@@ -530,6 +556,10 @@ body {
 }
 .detreg {
     border-radius: 5px;
+    width: 150px;
+}
+.detreg i {
+    padding-left: 5px;
 }
 @media (max-width: 767px) {
     .detform h4 {
@@ -537,6 +567,12 @@ body {
     }
     .detform p {
         font-size: 16px;
+    }
+    .send {
+        justify-content: center !important;
+    }
+    .send .detreg {
+        width: 100%;
     }
 }
 /* FAQ */
@@ -767,6 +803,7 @@ body {
 
 .card img {
     width: 100%;
+    height: 200px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -884,7 +921,7 @@ body {
 }
 .uni8 .uimg {
     width: 100%;
-    height: 250px;
+    height: 300px;
     border-radius: 5px;
 }
 .uni8 .unimg {
@@ -914,6 +951,10 @@ body {
     padding: 15px;
     border-radius: 10px;
     border: 1px solid var(--light);
+}
+.modal-content {
+    background-color: transparent !important;
+    border: none !important;
 }
 .uni4 .imgbox {
     position: relative;
@@ -953,6 +994,9 @@ body {
 .uni4 .content .price {
     color: var(--dark);
     font-size: 18px;
+}
+.priceList i {
+    margin-left: 5px !important;
 }
 .uni4 .content .price select {
     cursor: pointer;
