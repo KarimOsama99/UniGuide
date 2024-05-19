@@ -1019,6 +1019,19 @@ body {
         padding: 10px !important;
     }
 }
+@media (max-width: 767px) {
+    .uni .row {
+        flex-direction: column-reverse;
+    }
+    .uni .uimg,
+    .uni .rmd,
+    .uni .box2 {
+        display: none;
+    }
+    .uni4 {
+        margin-bottom: 25px;
+    }
+}
 
 .uni4 .content .stats p {
     color: var(--dark);
