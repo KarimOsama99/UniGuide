@@ -1,20 +1,7 @@
 /********** Custom Fonts **********/
-@font-face {
-    font-family: 'BuloRounded';
-    src: url(../fonts/bulorounded/BuloRounded-Black.ttf) format('truetype'),
-        url(../fonts/bulorounded/BuloRounded-BlackItalic.ttf) format('truetype'),
-        url(../fonts/bulorounded/BuloRounded-Bold.ttf) format('truetype'),
-        url(../fonts/bulorounded/BuloRounded-BoldItalic.ttf) format('truetype'),
-        url(../fonts/bulorounded/BuloRounded-Light.ttf) format('truetype'),
-        url(../fonts/bulorounded/BuloRounded-LightItalic.ttf) format('truetype'),
-        url(../fonts/bulorounded/BuloRounded-Medium.ttf) format('truetype'),
-        url(../fonts/bulorounded/BuloRounded-MediumItalic.ttf) format('truetype'),
-        url(../fonts/bulorounded/BuloRounded-Regular.ttf) format('truetype'),
-        url(../fonts/bulorounded/BuloRounded-RegularItalic.ttf) format('truetype');
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Recursive:wght@300..1000&display=swap');
 body {
-    font-family: 'BuloRounded', sans-serif !important;
+    font-family: 'Recursive', sans-serif !important;
     background-color: #fafafa !important;
 }
 
@@ -42,7 +29,7 @@ body {
     position: fixed;
     display: none;
     right: 45px;
-    bottom: 45px;
+    bottom: 50px;
     border-radius: 50% !important;
     z-index: 99;
 }
@@ -59,7 +46,7 @@ body {
     padding: 8px;
     border-radius: 50%;
     right: 45px;
-    bottom: 120px;
+    bottom: 50px;
     z-index: 999;
     transition: all .2s ease-in-out;
 }
@@ -129,11 +116,11 @@ body {
 
 /* Intro */
 .intro {
-    background-color: var(--dark);
+    background-color: #60f3d6;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border-bottom: 3px solid var(--green);
+    border-bottom: 3px solid var(--primary);
 }
 .flags {
     padding: 15px;
@@ -146,7 +133,7 @@ body {
     margin-bottom: 3px;
 }
 .flags a {
-    color: #fff;
+    color: var(--primary);
 }
 .langs a {
     transition: all .2s ease-in-out;
@@ -156,10 +143,11 @@ body {
 }
 .langs {
     font-size: 18px;
+    margin-top: 10px !important;
     margin-bottom: 10px;
     padding-left: 10px;
     color: #fff;
-    background-color: var(--dark);
+    background-color: var(--green);
 }
 .langs a:first-of-type {
     font-weight: bold;
@@ -173,15 +161,35 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
-    border: 1px solid var(--green);
+    color: var(--primary);
+    border: 1px solid var(--primary);
     border-radius: 50%;
     transition: .3s;
 }
 
 .intro .btn.btn-social:hover {
-    background-color: var(--green);
-    color: var(--dark);
+    background-color: var(--primary);
+    color: #fff;
+}
+
+.intro .countries {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.intro .countries a:not(.countries a:last-of-type) {
+    border-right: 1px solid var(--dark);
+    padding-right: 8px;
+}
+.intro .countries a {
+    text-align: center;
+}
+.intro .countries img {
+    width: 25px;
+    height: 15px;
+    margin-bottom: 3px;
+    margin-right: 5px;
 }
 
 /* Intro */
@@ -309,9 +317,11 @@ body {
         object-fit: cover;
     }
 
-    .header-carousel .owl-nav .owl-prev,
-    .header-carousel .owl-nav .owl-next {
-        transform: translateY(50px);
+    .header-carousel .owl-nav {
+        bottom: 5px;
+        top: unset !important;
+        flex-direction: row !important;
+        gap: 10px;
     }
     .card-body .price a {
         padding: 5px 10px !important;
@@ -356,6 +366,11 @@ body {
     height: 650px;
     display: flex;
     align-items: center;
+}
+@media (max-width: 767px) {
+    .page-header {
+        height: 350px;
+    }
 }
 .page-header.aboutH {
     background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url(../img/1.من\ نحن.png);
@@ -817,6 +832,32 @@ body {
     align-items: center;
     gap: 15px;
 }
+@media (max-width: 365px) {
+   .intro .countries  {
+        display: none !important;
+    }
+}
+@media (max-width: 540px) {
+    .intro .countries span {
+        display: none;
+    }
+    .card img {
+        height: 150px;
+    }
+    .card-text {
+        /* justify-content: center; */
+        flex-wrap: wrap;
+    }
+    .scholarship .img img {
+        width: 90px !important;
+        height: 90px !important;
+    }
+}
+@media (max-width: 767px) {
+    .card img {
+        height: 175px;
+    }
+}
 .card-text img {
     border-radius: 0;
 }
@@ -934,6 +975,20 @@ body {
     padding-left: 15px;
     border-bottom: 1px solid var(--light);
 }
+.uni8 .imgbutton {
+    position: relative;
+}
+.uni8 .imgbutton button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 12px 25px !important;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 .uni8 .content p {
     color: gray;
     font-size: 18px;
@@ -952,9 +1007,15 @@ body {
     border-radius: 10px;
     border: 1px solid var(--light);
 }
+.modal-header {
+    border-bottom: none;
+}
+.modal-header button {
+    font-size: 22px;
+}
 .modal-content {
     background-color: transparent !important;
-    border: none !important;
+    border: none;
 }
 .uni4 .imgbox {
     position: relative;
@@ -1029,9 +1090,17 @@ body {
     .uni .box2 {
         display: none;
     }
+    .uni8 .imgbutton button {
+        position: unset;
+        padding: 10px 25px !important;
+    }
     .uni4 {
         margin-bottom: 25px;
     }
+}
+
+.uni4 .content .stats {
+    padding-left: 10px;
 }
 
 .uni4 .content .stats p {
@@ -1045,7 +1114,7 @@ body {
 }
 .uni4 .content .stats p span {
     color: gray;
-    margin-left: 5px;
+    font-size: 16px;
 }
 .uni4 .content .reg a {
     padding: 10px;
@@ -1172,8 +1241,7 @@ body {
     margin-bottom: 0 !important;
     list-style: none;
     display: flex;
-    justify-content: space-around;
-    gap: 0 10px;
+    gap: 0 8px;
     flex-wrap: wrap;
     border-bottom: 1px solid var(--light);
     border-top-right-radius: 8px;
@@ -1182,8 +1250,8 @@ body {
 }
 .info-list2 li {
     position: relative;
-    padding: 10px;
-    font-size: 18px;
+    padding: 10px 10px 5px;
+    font-size: 16px;
     cursor: pointer;
     transition: color .2s ease-in-out;
 }
@@ -1226,8 +1294,8 @@ body {
     font-size: 16px;
     padding: 10px;
 }
-.unibox div {
-    width: 250px;
+.unibox .name {
+    width: 200px;
 }
 .info-content2 .title {
     background-color: #60f3d625;
@@ -1462,3 +1530,11 @@ table th {
     }
 }
 /* Registration */
+
+
+/* Carousel Modal */
+.carousel-item img {
+    width: 100%;
+    height: 300px;
+}
+/* Carousel Modal */

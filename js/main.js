@@ -54,8 +54,10 @@
   $(window).scroll(function () {
     if ($(this).scrollTop() > 300) {
       $(".back-to-top").fadeIn("slow");
+      $(".whatsapp").css("bottom", "120px");
     } else {
       $(".back-to-top").fadeOut("slow");
+      $(".whatsapp").css("bottom", "50px");
     }
   });
   $(".back-to-top").click(function () {
@@ -125,13 +127,13 @@
   });
 
   // // toggler
-  // $(".navbar-toggler").click(function () { 
+  // $(".navbar-toggler").click(function () {
   //   $(".navbar-toggler i").toggleClass("fa-bars", "fa-times");
   // });
 
   // University Details
-  $('.info-list li').on("click", function () { 
-    $(this).addClass('active').siblings('li').removeClass('active');
+  $(".info-list li").on("click", function () {
+    $(this).addClass("active").siblings("li").removeClass("active");
   });
-  
+
 })(jQuery);

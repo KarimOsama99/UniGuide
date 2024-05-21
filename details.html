@@ -58,12 +58,11 @@
                         <a href="index_ar.html"><img src="img/flag.png" alt="english">English</a>
                     </div>
                 </div>
-                <div class="d-flex">
-                        <a class="btn btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+                <div class="countries">
+                    <a href="#"><img src="img/egypt.png" alt="turkey"><span>Egypt</span></a>
+                    <a href="#"><img src="img/turkey.png" alt="turkey"><span>Turkey</span></a>
+                    <a href="#"><img src="img/iran.webp" alt="turkey"><span>Iran</span></a>
+                </div>
     </section>
     <!-- End Intro -->
 
@@ -151,15 +150,18 @@
 
           <div class="col-lg-8 mb-4">
             <div class="uni8">
+                <div class="imgbutton">
                 <img src="img/الجامعات.png" alt="uni8" class="uimg">
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#photoModal">View Photos <i class="fas fa-images"></i></button>
+                </div>
                 <div class="content rmd pb-2">
                     <div class="info pt-4">
                         <!-- <img src="img/التعليم.webp" alt="unimg" class="unimg"> -->
                         <h2>Ain-Shams University</h2>
                     </div>
                     <div class="det d-flex gap-5">
-                        <p><span><i class="fas fa-university"></i>University Type</span><br />Private</p>
-                        <p><span><i class="fas fa-map-marker-alt"></i>Location</span><br />Cairo</p>
+                            <p><span><i class="fas fa-university"></i>University Type</span><br />Private</p>
+                            <p><span><i class="fas fa-map-marker-alt"></i>Location</span><br />Cairo</p>
                     </div>
                 </div>
 
@@ -1039,23 +1041,13 @@
           <div class="col-lg-4">
             <div class="box1 uni4">
                 <div class="imgbox">
-                    <a href="#" target="_blank" data-bs-toggle="modal" data-bs-target="#videoModal">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#videoModal">
                         <img src="img/1.من نحن.png" alt="uniimg">
                         <i class="fas fa-play-circle play"></i>
                     </a>
                 </div>
                 <div class="content">
-                    <div class="price d-flex justify-content-between align-items-center pt-3 pb-3">
-                        <div class="years">
-                            <select class="form-select" name="years" id="years">
-                                <option value="4 years" disabled selected>Number of Years --</option>
-                                <option value="year 1">2 Years</option>
-                                <option value="year 2">4 Years</option>
-                            </select>
-                        </div>
-                        <span class="offer"><i class="fas fa-tags"></i>5% Off</span>
-                    </div>
-                    <div class="stats d-flex flex-column gap-3 pt-2">
+                    <div class="stats d-flex flex-column gap-3 pt-3">
                         <p><i class="fas fa-globe"></i>Global Rank: <span>6787</span></p>
                         <p><i class="fas fa-globe"></i>Local Rank: <span>141</span></p>
                         <p>Study Programs: <span>171</span></p>
@@ -1271,10 +1263,52 @@
 <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
+    <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
       <div class="modal-body">
         <video width="100%" controls>
             <source src="" type="video/mp4">
         </video>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Photos Modal -->
+<div class="modal fade" id="photoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+    <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+      <div class="modal-body">
+        <div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/1.من نحن.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/1.من نحن.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/1.من نحن.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
       </div>
     </div>
   </div>
