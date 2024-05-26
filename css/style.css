@@ -60,6 +60,9 @@ body {
         right: 25px !important;
     }
 }
+.progwhats {
+    bottom: 120px;
+}
 
 /*** Spinner ***/
 #spinner {

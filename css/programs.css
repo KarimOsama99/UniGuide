@@ -11580,7 +11580,7 @@ select.form-control[multiple],select.form-control[size],textarea.form-control {
 }
 
 .btn:hover {
-    color: #fff;
+    color: #fff !important;
     text-decoration: none;
     background-color: #3f1194 !important;
     border-color: #3f1194 !important;
@@ -19568,8 +19568,8 @@ h5 {
 
     .btn:hover {
         background: #f36c25;
-        color: #fff;
-        border-color: #f36c25
+        color: #fff !important;
+        border-color: #f36c25;
     }
 }
 
