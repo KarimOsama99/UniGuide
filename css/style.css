@@ -6,8 +6,8 @@ body {
 }
 
 .preloader {
-    width: 600px;
-    height: 250px;
+    width: max-content;
+    height: 300px;
 }
 /********** Template CSS **********/
 :root {
