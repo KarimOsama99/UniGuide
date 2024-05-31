@@ -153,7 +153,7 @@ body {
     background-color: var(--green);
 }
 .langs a:first-of-type {
-    font-weight: bold;
+    font-weight: 600;
     padding-bottom: 5px;
 }
 
@@ -266,6 +266,8 @@ body {
 .navbar-light .navbar-brand,
 .navbar-light a.btn {
     height: 75px;
+    display: flex !important;
+    align-items: center;
 }
 
 .navbar-light .navbar-nav .nav-link {
