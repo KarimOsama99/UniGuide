@@ -11767,7 +11767,7 @@ input[type=button].btn-block,input[type=reset].btn-block,input[type=submit].btn-
     float: left;
     min-width: 10rem;
     padding: .5rem 0;
-    margin: .125rem 0 0;
+    margin: -.1rem 0 0 !important;
     font-size: 1rem;
     color: #212529;
     text-align: left;
@@ -11775,7 +11775,7 @@ input[type=button].btn-block,input[type=reset].btn-block,input[type=submit].btn-
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid rgba(0,0,0,.15);
-    border-radius: .25rem
+    /* border-radius: .25rem */
 }
 
 .dropdown-menu-left {
