@@ -154,7 +154,6 @@ body {
     background-color: var(--green);
 }
 .langs a:first-of-type {
-    font-weight: 600;
     padding-bottom: 5px;
 }
 
@@ -266,7 +265,7 @@ body {
 
 .navbar-light .navbar-brand,
 .navbar-light a.btn {
-    height: 76px;
+    height: 80px;
     display: flex !important;
     align-items: center;
 }
@@ -806,6 +805,8 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     margin: auto;
+}
+.allwrps.gapp {
     gap: 8px 20px;
 }
 @media (min-width: 1440px) {
