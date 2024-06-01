@@ -1,7 +1,8 @@
 /********** Custom Fonts **********/
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Recursive:wght@300..1000&display=swap');
+
 body {
-    font-family: 'Recursive', sans-serif !important;
+    font-family: 'Cairo', sans-serif !important;
     background-color: #fafafa !important;
 }
 
@@ -231,8 +232,8 @@ body {
     margin-right: 30px;
     padding: 25px 0;
     color: #FFFFFF;
-    font-size: 15px;
-    text-transform: uppercase;
+    font-size: 17px;
+    text-transform: capitalize;
     outline: none;
 }
 .navbar-toggler {
@@ -265,7 +266,7 @@ body {
 
 .navbar-light .navbar-brand,
 .navbar-light a.btn {
-    height: 75px;
+    height: 76px;
     display: flex !important;
     align-items: center;
 }
@@ -805,6 +806,12 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     margin: auto;
+    gap: 8px 20px;
+}
+@media (min-width: 1440px) {
+    .allwrps {
+        max-width: 1350px !important;
+    }
 }
 .center {
     display: flex;
@@ -827,7 +834,7 @@ body {
 
 .card:hover {
     box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
-    transform: translateY(-5px);
+    transform: translateY(-5px) !important;
 }
 
 .card img {

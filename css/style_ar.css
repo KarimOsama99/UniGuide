@@ -117,3 +117,7 @@ body {
 .footer .mb-2 i {
     margin-left: 8px;
 }
+
+.aboutList li:before {
+    margin-left: 5px;
+}

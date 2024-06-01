@@ -8,7 +8,7 @@ function Filtering() {
         block.style.transform = `scale(0)`;
         block.style.opacity = `0`;
         block.style.visibility = `hidden`;
-        block.style.width = `0`;
+        block.style.display = `none`;
         block.style.marginLeft = `0`;
         block.style.marginRight = `0`;
         block.style.height = `0`;
@@ -20,7 +20,7 @@ function Filtering() {
           blk.style.transform = `scale(1)`;
           blk.style.opacity = `1`;
           blk.style.visibility = `visible`;
-          blk.style.width = `100%`;
+          blk.style.display = `block`;
           blk.style.marginLeft = `5px`;
           blk.style.marginRight = `5px`;
           blk.style.height = `100%`;
@@ -32,7 +32,7 @@ function Filtering() {
           block.style.transform = `scale(1)`;
           block.style.opacity = `1`;
           block.style.visibility = `visible`;
-          block.style.width = `100%`;
+          block.style.display = `block`;
           block.style.marginLeft = `5px`;
           block.style.marginRight = `5px`;
           block.style.height = `100%`;
