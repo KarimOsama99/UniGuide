@@ -154,9 +154,14 @@ body {
     background-color: var(--green);
 }
 .langs a:first-of-type {
+    display: block;
     padding-bottom: 5px;
 }
-
+.langsminus {
+    margin-top: -5px !important;
+    margin-left: 10px !important;
+    border-radius: 2px !important;
+}
 .intro .btn.btn-social {
     margin-right: 10px;
     width: 35px;
@@ -1668,4 +1673,19 @@ table th {
 }
 .line-clamp-3 {
     -webkit-line-clamp: 3;
+}
+
+.menu u {
+    color: var(--dark) !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    transition: all .2s ease-in-out !important;
+}
+.menu u:hover {
+    color: var(--primary) !important;
+    font-weight: 800 !important;
+}
+
+.contents-menu .menu a::before {
+    background-color: var(--primary) !important;
 }

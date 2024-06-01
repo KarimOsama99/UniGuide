@@ -11,4 +11,8 @@ $(function () {
       $(".info-content2 .remo").hide();
       $("." + $(this).data("class")).fadeIn();
     });
+
+    $(".uniBtns button").click(function () {
+      $(this).addClass("active").siblings().removeClass("active");
+    });
 });
