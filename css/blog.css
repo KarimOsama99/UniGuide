@@ -21349,27 +21349,17 @@ ol.breadcrumb,ul.breadcrumb {
     border: 1px solid #eee
 }
 
-.table:not(table) table tr,table:not(.table) tr {
-    background-color: #edf0fe
-}
+
 
 .table:not(table) table tr p,table:not(.table) tr p {
     margin-bottom: 0
 }
 
-.table:not(table) table tr:first-child,.table:not(table) table tr:first-child td,table:not(.table) tr:first-child,table:not(.table) tr:first-child td {
-    background: #4a86e8;
-    color: #fff
-}
 
 .table:not(table) table tr:nth-child(2n),table:not(.table) tr:nth-child(2n) {
     background: #fff
 }
 
-.table:not(table) table td,.table:not(table) table th,table:not(.table) td,table:not(.table) th {
-    border: 1px solid #eee;
-    padding: .75rem
-}
 
 .table:not(table) {
     width: 100%;

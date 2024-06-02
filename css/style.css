@@ -1115,6 +1115,7 @@ body {
 }
 .priceList i {
     margin-left: 5px !important;
+    margin-right: 8px;
 }
 .uni4 .content .price select {
     cursor: pointer;

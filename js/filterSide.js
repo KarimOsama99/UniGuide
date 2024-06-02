@@ -13,4 +13,6 @@ $(document).ready(function () {
                     .parent(".theInput")
                     .click();
               });
+
+              $(".info-content2 .remos").hide();
 });
