@@ -2357,6 +2357,13 @@ select.form-control[multiple],select.form-control[size],textarea.form-control {
     border-radius: .25rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
 }
+.btn.d-lg-block {
+    border-radius: 0 !important;
+}
+.btn.d-lg-block:hover {
+    background-color: #5f25eb !important;
+    border-color: #5f25eb !important;
+}
 
 @media(prefers-reduced-motion:reduce) {
     .btn {
@@ -3015,7 +3022,7 @@ input[type=button].btn-block,input[type=reset].btn-block,input[type=submit].btn-
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid rgba(0,0,0,.15);
-    border-radius: .25rem
+    /* border-radius: .25rem */
 }
 
 .dropdown-menu-left {
@@ -7440,7 +7447,8 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover {
 }
 
 .mr-1,.mx-1 {
-    margin-right: .25rem!important
+    margin-right: .25rem!important;
+    margin-left: 5px;
 }
 
 .mb-1,.my-1 {
@@ -12417,7 +12425,7 @@ ol.breadcrumb,ul.breadcrumb {
 
 .close-bg {
     background: rgba(0,91,148,.95);
-    z-index: 1000 !important;
+    z-index: 100000 !important;
     transition: all .3s
 }
 
@@ -15096,7 +15104,8 @@ footer .social .ico {
     top: 0;
     opacity: 0;
     pointer-events: none;
-    z-index: 10
+    z-index: 10;
+    cursor: pointer;
 }
 
 .countdown-show .tim {

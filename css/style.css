@@ -1697,3 +1697,7 @@ table th {
 .contents-menu .menu a::before {
     background-color: var(--primary) !important;
 }
+
+.closeFilter {
+    cursor: pointer;
+}
