@@ -1697,9 +1697,6 @@ table th {
     font-weight: 800 !important;
 }
 
-.contents-menu .menu a::before {
-    background-color: var(--primary) !important;
-}
 
 .closeFilter {
     cursor: pointer;

@@ -20906,18 +20906,10 @@ ol.breadcrumb,ul.breadcrumb {
 
 .contents-menu .menu a:before {
     position: absolute;
-    content: "";
+    content: "\27A4";
     font-size: 3em;
-    width: 6px;
-    height: 4px;
-    background: currentColor;
-    background-color: #0a2240;
-    border-radius: 50%;
-    height: 6px;
     font-size: 1em;
-    display: inline-block;
-    left: 4px;
-    top: 13px
+    left: -3px;
 }
 
 @media screen and (max-width: 768px) {
